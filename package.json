@@ -18,6 +18,9 @@
     "url": "https://github.com/BigWhaleLabs/bwl-eslint-config/issues"
   },
   "homepage": "https://github.com/BigWhaleLabs/bwl-eslint-config#readme",
+  "devDependencies": {
+    "np": "^7.6.2"
+  },
   "peerDependencies": {
     "eslint": "^8.23.1",
     "eslint-config-prettier": "^8.5.0",
