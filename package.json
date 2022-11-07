@@ -1,0 +1,43 @@
+{
+  "name": "@big-whale-labs/eslint-config-bwl",
+  "packageManager": "yarn@3.2.2",
+  "description": "BWL ESlint configs which we're using across all of our apps",
+  "version": "1.1.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BigWhaleLabs/bwl-eslint-config.git"
+  },
+  "scripts": {
+    "release": "np --any-branch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BigWhaleLabs/bwl-eslint-config/issues"
+  },
+  "homepage": "https://github.com/BigWhaleLabs/bwl-eslint-config#readme",
+  "np": {
+    "2fa": false,
+    "tests": false,
+    "cleanup": false,
+    "yarn": false
+  },
+  "devDependencies": {
+    "np": "^7.6.2"
+  },
+  "peerDependencies": {
+    "eslint": "^8.23.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-no-relative-import-paths": "^1.4.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.31.8",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-sort-destructure-keys": "^1.4.0",
+    "eslint-plugin-sort-imports-es6-autofix": "^0.6.0",
+    "eslint-plugin-sort-keys-fix": "^1.1.2",
+    "eslint-plugin-valtio": "^0.6.0"
+  }
+}
