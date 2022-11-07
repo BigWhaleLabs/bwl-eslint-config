@@ -11,13 +11,16 @@
   "scripts": {
     "release": "np --any-branch"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "eslint"
+  ],
+  "author": "big-whale-labs",
+  "license": "NIT",
   "bugs": {
     "url": "https://github.com/BigWhaleLabs/bwl-eslint-config/issues"
   },
   "homepage": "https://github.com/BigWhaleLabs/bwl-eslint-config#readme",
+  "prettier": "@big-whale-labs/prettier-config",
   "np": {
     "2fa": false,
     "tests": false,
@@ -25,10 +28,12 @@
     "yarn": false
   },
   "devDependencies": {
+    "@big-whale-labs/prettier-config": "1.1.1",
     "np": "^7.6.2"
   },
-  "peerDependencies": {
-    "eslint": "^8.23.1",
+  "dependencies": {
+    "@typescript-eslint/parser": "^5.37.0",
+    "eslint": ">= 8.23",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-no-relative-import-paths": "^1.4.0",
