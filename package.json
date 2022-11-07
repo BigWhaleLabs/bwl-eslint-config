@@ -1,12 +1,9 @@
 {
-  "name": "@upacyxou/eslint-config-bwl",
+  "name": "@big-whale-labs/eslint-config-bwl",
   "packageManager": "yarn@3.2.2",
-  "description": "BWL Eslint configs which we're using across all of our apps",
+  "description": "BWL ESlint configs which we're using across all of our apps",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BigWhaleLabs/bwl-eslint-config.git"
@@ -18,7 +15,7 @@
     "url": "https://github.com/BigWhaleLabs/bwl-eslint-config/issues"
   },
   "homepage": "https://github.com/BigWhaleLabs/bwl-eslint-config#readme",
-  "devDependencies": {
+  "peerDependencies": {
     "eslint": "^8.23.1",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
