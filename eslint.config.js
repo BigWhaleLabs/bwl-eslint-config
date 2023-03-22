@@ -9,6 +9,12 @@ module.exports = [
       es2021: true,
       node: true,
     },
+    parserOptions: {
+      ecmaVersion: 12,
+      sourceType: 'module',
+      parser: tsParser,
+      project: './tsconfig.json',
+    },
     plugins: [
       'react',
       'react-hooks',
@@ -28,15 +34,6 @@ module.exports = [
       'plugin:valtio/recommended',
     ],
     rules: {
-      files: ['.ts', '.tsx', '.jsx', '.js', '.jsx'],
-      languageOptions: {
-        ecmaVersion: 12,
-        sourceType: 'module',
-        parser: tsParser,
-        parserOptions: {
-          project: './tsconfig.json',
-        },
-      },
       'sort-keys-fix/sort-keys-fix': 'error',
       'valtio/state-snapshot-rule': 'off',
       'no-relative-import-paths/no-relative-import-paths': [
