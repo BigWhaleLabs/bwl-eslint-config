@@ -9,6 +9,7 @@ module.exports = {
     parser: '@typescript-eslint/parser',
     project: './tsconfig.json',
   },
+  exclude: ['.eslintrc.js', './node_modules/'],
   plugins: [
     'react',
     'react-hooks',
