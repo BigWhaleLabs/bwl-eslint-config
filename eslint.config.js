@@ -1,10 +1,7 @@
 const { FlatCompat } = require('@eslint/eslintrc')
 const tsParser = require('@typescript-eslint/parser')
 
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-  recommendedConfig: {},
-})
+const compat = new FlatCompat({ recommendedConfig: {} })
 
 module.exports = [
   ...compat.config({
