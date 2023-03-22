@@ -4,6 +4,7 @@
   "description": "BWL ESlint configs which we're using across all of our apps",
   "version": "2.0.0",
   "main": "eslint.config.js",
+  "prettier": "@big-whale-labs/prettier-config",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BigWhaleLabs/bwl-eslint-config.git"
@@ -29,6 +30,7 @@
     "np": "^7.6.2"
   },
   "dependencies": {
+    "@typescript-eslint/parser": "^5.56.0",
     "eslint": "^8.23.1",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
