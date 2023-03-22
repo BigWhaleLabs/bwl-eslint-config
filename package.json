@@ -3,7 +3,7 @@
   "packageManager": "yarn@3.2.2",
   "description": "BWL ESlint configs which we're using across all of our apps",
   "version": "2.1.0",
-  "main": "eslint.config.js",
+  "main": ".eslintrc.js",
   "prettier": "@big-whale-labs/prettier-config",
   "repository": {
     "type": "git",
