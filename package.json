@@ -30,6 +30,7 @@
     "np": "^7.6.2"
   },
   "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.56.0",
     "@typescript-eslint/parser": "^5.56.0",
     "eslint": "^8.23.1",
     "eslint-config-prettier": "^8.5.0",
@@ -41,6 +42,7 @@
     "eslint-plugin-sort-destructure-keys": "^1.4.0",
     "eslint-plugin-sort-imports-es6-autofix": "^0.6.0",
     "eslint-plugin-sort-keys-fix": "^1.1.2",
-    "eslint-plugin-valtio": "^0.6.0"
+    "eslint-plugin-valtio": "^0.6.0",
+    "typescript": "^5.0.2"
   }
 }

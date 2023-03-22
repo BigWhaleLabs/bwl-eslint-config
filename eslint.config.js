@@ -1,25 +1,16 @@
-import { FlatCompat } from '@eslint/eslintrc'
-import path from 'path'
-import { fileURLToPath } from 'url'
-import tsParser from '@typescript-eslint/parser'
-
-// mimic CommonJS variables -- not needed if using CommonJS
-const __filename = fileURLToPath(import.meta.url)
-const __dirname = path.dirname(__filename)
+const { FlatCompat } = require('@eslint/eslintrc')
+const tsParser = require('@typescript-eslint/parser')
 
 const compat = new FlatCompat({
   baseDirectory: __dirname,
+  recommendedConfig: {},
 })
 
-export default [
+module.exports = [
   ...compat.config({
     env: {
       es2021: true,
       node: true,
-    },
-    files: ['.js', '.jsx', '.ts', '.tsx'],
-    parserOptions: {
-      project: './tsconfig.json',
     },
     plugins: [
       'react',
@@ -40,10 +31,14 @@ export default [
       'plugin:valtio/recommended',
     ],
     rules: {
+      files: ['.ts', '.tsx', '.jsx', '.js', '.jsx'],
       languageOptions: {
         ecmaVersion: 12,
         sourceType: 'module',
         parser: tsParser,
+        parserOptions: {
+          project: './tsconfig.json',
+        },
       },
       'sort-keys-fix/sort-keys-fix': 'error',
       'valtio/state-snapshot-rule': 'off',
