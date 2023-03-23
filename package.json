@@ -2,7 +2,7 @@
   "name": "@big-whale-labs/eslint-config-bwl",
   "packageManager": "yarn@3.2.2",
   "description": "BWL ESlint configs which we're using across all of our apps",
-  "version": "2.1.3",
+  "version": "2.1.4",
   "main": ".eslintrc.js",
   "prettier": "@big-whale-labs/prettier-config",
   "repository": {
