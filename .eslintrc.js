@@ -9,7 +9,7 @@ module.exports = {
     parser: '@typescript-eslint/parser',
     project: './tsconfig.json',
   },
-  exclude: ['.eslintrc.js', './node_modules/'],
+  ignorePatterns: ['/node_modules/', '.eslintrc.js'],
   plugins: [
     'react',
     'react-hooks',
@@ -45,9 +45,8 @@ module.exports = {
     'react/jsx-sort-props': [
       'error',
       {
-        callbacksLast: true,
-        shorthandLast: true,
-        multiline: 'first',
+        shorthandFirst: true,
+        multiline: 'last',
       },
     ],
     'require-await': 'error',
