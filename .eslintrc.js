@@ -15,6 +15,7 @@ module.exports = {
     'metro.config.js',
     'vite.config.ts',
     'vite.config.js',
+    '*.min.js',
   ],
   plugins: [
     'react',
