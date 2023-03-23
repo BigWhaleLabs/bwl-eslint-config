@@ -9,7 +9,13 @@ module.exports = {
     parser: '@typescript-eslint/parser',
     project: './tsconfig.json',
   },
-  ignorePatterns: ['/node_modules/', '.eslintrc.js'],
+  ignorePatterns: [
+    '/node_modules/',
+    '.eslintrc.js',
+    'metro.config.js',
+    'vite.config.ts',
+    'vite.config.js',
+  ],
   plugins: [
     'react',
     'react-hooks',
