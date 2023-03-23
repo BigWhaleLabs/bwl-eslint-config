@@ -46,6 +46,7 @@ module.exports = {
       'error',
       {
         shorthandFirst: true,
+        callbacksLast: true,
         multiline: 'last',
       },
     ],
