@@ -36,6 +36,7 @@ module.exports = {
     'plugin:valtio/recommended',
   ],
   rules: {
+    curly: ['error', 'multi-or-nest'],
     'sort-keys-fix/sort-keys-fix': 'error',
     'valtio/state-snapshot-rule': 'off',
     'no-relative-import-paths/no-relative-import-paths': [
@@ -44,7 +45,10 @@ module.exports = {
     ],
     'import/newline-after-import': ['error'],
     '@typescript-eslint/no-floating-promises': 'error',
-    'sort-destructure-keys/sort-destructure-keys': [2, { caseSensitive: true }],
+    'sort-destructure-keys/sort-destructure-keys': [
+      'error',
+      { caseSensitive: true },
+    ],
     'react/jsx-curly-brace-presence': [
       'error',
       { props: 'never', children: 'ignore', propElementValues: 'always' },
