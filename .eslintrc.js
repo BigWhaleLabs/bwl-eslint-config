@@ -36,6 +36,7 @@ module.exports = {
     'plugin:valtio/recommended',
   ],
   rules: {
+    'node/no-process-env': 'error',
     curly: ['error', 'multi-or-nest'],
     'sort-keys-fix/sort-keys-fix': 'error',
     'valtio/state-snapshot-rule': 'off',
