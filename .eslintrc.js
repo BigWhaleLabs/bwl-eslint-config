@@ -27,6 +27,7 @@ module.exports = {
     'no-relative-import-paths',
     'sort-destructure-keys',
     'sort-keys-fix',
+    'eslint-plugin-node',
   ],
   extends: [
     'eslint:recommended',
