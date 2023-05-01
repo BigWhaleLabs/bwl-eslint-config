@@ -35,7 +35,6 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
     'plugin:valtio/recommended',
-    'plugin:consistent-default-export-name/fixed',
   ],
   rules: {
     'node/no-process-env': 'error',
@@ -85,15 +84,5 @@ module.exports = {
       },
     ],
     'import/prefer-default-export': 'error',
-    'import/no-anonymous-default-export': [
-      'error',
-      {
-        allowObject: true,
-        allowArray: true,
-        allowCallExpression: true,
-        allowLiteral: true,
-        allowNew: true,
-      },
-    ],
   },
 }
