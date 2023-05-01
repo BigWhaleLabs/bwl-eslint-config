@@ -85,7 +85,15 @@ module.exports = {
       },
     ],
     'import/prefer-default-export': 'error',
-    'consistent-default-export-name/default-export-match-filename': 'error',
-    'consistent-default-export-name/default-import-match-filename': 'error',
+    'import/no-anonymous-default-export': [
+      'error',
+      {
+        allowObject: true,
+        allowArray: true,
+        allowCallExpression: true,
+        allowLiteral: true,
+        allowNew: true,
+      },
+    ],
   },
 }
