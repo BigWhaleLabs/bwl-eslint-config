@@ -35,6 +35,7 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
     'plugin:valtio/recommended',
+    'plugin:consistent-default-export-name/fixed',
   ],
   rules: {
     'node/no-process-env': 'error',
@@ -84,5 +85,7 @@ module.exports = {
       },
     ],
     'import/prefer-default-export': 'error',
+    'consistent-default-export-name/default-export-match-filename': 'error',
+    'consistent-default-export-name/default-import-match-filename': 'error',
   },
 }
